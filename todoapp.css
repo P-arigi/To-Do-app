@@ -1,0 +1,97 @@
+body{
+    background-color: #49B749;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetiva Neue",Arial, Helvetica,"Lucida Grande" sans-serif;
+}
+
+.todo-wrapper{
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+    font-weight: 3000;
+    
+}
+
+.todo-wrapper h2{
+    margin:0;
+    font-style: italic;
+}
+.todo-wrapper p{
+    font-style: oblique;
+    margin:5px;
+    color:#666;
+}
+.todo-wrapper ol{
+    margin:20px 0;
+}
+
+.todo-wrapper ol li{
+    margin: 5px 0;
+    padding:3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-transition:all 0.5s ease-out ;
+    transition: all 0.5s ease-out;
+
+}
+
+.todo-wrapper ol li:nth-child(even){
+    background: #ddd;
+}
+.todo-wrapper .completed{
+    text-decoration: line-through;
+    color:#666;
+}
+.todo-wrapper.pretty-button:hover{
+    cursor:pointer;
+    opacity: 0.75;
+}
+.todo-wrapper input{
+    padding:3px 6px;
+}
+.todo-wrapper form{
+    display: inline-block;
+}
+
+#control-wrapper{
+    text-align:center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.todo-wrapper #add-button{
+    background-color:#f1b126 ;
+}
+
+.todo-wrapper #clear-completed-button{
+    background-color: #10eaea;
+}
+.todo-wrapper #empty-button{
+    background-color: #49B749;
+}
+.todo-wrapper #save-button{
+    background-color: #a53f43;
+}
+/*.todo-wrapper #edit-button{
+    background-color: deeppink;
+}*/
+@media only screen and (min-width:1400px){
+    .todo-wrapper{
+        width:50%
+    }
+    .todo-wrapper input{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width:1399px) and (min-width:750px){
+    .todo-wrapper{
+        width:75%
+    }
+    .todo-wrapper input{
+        width: 400px;
+    }
+}
